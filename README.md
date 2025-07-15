@@ -140,7 +140,7 @@ echo "$(date): Backup script finished." | tee -a "${LOG_FILE}"
 
 1.  **Create the `backup.sh` file**:
     ```bash
-    sudo nano /usr/local/sbin/backup.sh
+    sudo vim /usr/local/sbin/backup.sh
     ```
     Paste the content above.
 2.  **Modify the `STANDARD_USER` variable**:
@@ -192,7 +192,7 @@ WantedBy=multi-user.target
 
 1.  **Create the `backup.service` file**:
     ```bash
-    sudo nano /etc/systemd/system/backup.service
+    sudo vim /etc/systemd/system/backup.service
     ```
     Paste the content above.
 2.  **Ensure the path in `ExecStart` matches the location of your `backup.sh` script**.
