@@ -15,13 +15,10 @@ Backups will be stored locally in a `/backup` directory and managed by `systemd`
 
 The script is designed to back up the following directories:
 
-  * `/var/www/html/toulousejudo.fr` (Website files)
-  * `/etc/httpd` (Apache configuration)
-  * `/etc/postfix` (Postfix configuration)
+  * `/var/www/html` (Website files)
+  * `/etc` 
   * `/usr/local/bin` (Custom scripts or binaries)
-  * `/etc/systemd/system/letencrypt.timer` (Let's Encrypt timer unit)
-  * `/etc/systemd/system/letencrypt.service` (Let's Encrypt service unit)
-  * `/home/fedora` (Home directory of the `fedora` user - **to be adapted**)
+  * `/home/username` (Home directory of the `username` user - **to be adapted**)
 
 Backup archives will be stored in the `/backup` directory.
 
