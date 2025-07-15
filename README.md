@@ -141,9 +141,9 @@ echo "$(date): Backup script finished." | tee -a "${LOG_FILE}"
     ```
     Paste the content above.
 2.  **Modify the `STANDARD_USER` variable**:
-    Replace `"your_standard_username"` with the actual username (e.g., `fedora`).
+    Replace `"username"` with the actual username (e.g., `david`).
     ```bash
-    STANDARD_USER="fedora" # REPLACE THIS WITH YOUR STANDARD USERNAME
+    STANDARD_USER="david" # REPLACE THIS WITH YOUR STANDARD USERNAME
     ```
 3.  **Make the script executable**:
     ```bash
@@ -281,7 +281,7 @@ In case a restoration is needed:
         ```bash
         sudo tar -Pxvf /backup/server_backup_YYYYMMDD_HHMMSS.tar.gz -C /tmp/restore /path/within/archive/to/file_or_folder
         ```
-        Example: `sudo tar -Pxvf /backup/server_backup_YYYYMMDD_HHMMSS.tar.gz -C /tmp/restore /var/www/html/toulousejudo.fr/index.html`
+        Example: `sudo tar -Pxvf /backup/server_backup_YYYYMMDD_HHMMSS.tar.gz -C /tmp/restore /var/www/html/web.com/index.html`
 3.  **Verify and Move:** Once files are extracted to a temporary directory, verify their integrity 
 and manually move them to their original location if necessary, taking care of permissions and ownership.
 **Be extremely cautious when restoring system files (e.g., `/etc/`)\!**
