@@ -284,4 +284,5 @@ In case a restoration is needed:
         Example: `sudo tar -Pxvf /backup/server_backup_YYYYMMDD_HHMMSS.tar.gz -C /tmp/restore /var/www/html/web.com/index.html`
 3.  **Verify and Move:** Once files are extracted to a temporary directory, verify their integrity 
 and manually move them to their original location if necessary, taking care of permissions and ownership.
+
 **Be extremely cautious when restoring system files (e.g., `/etc/`)\!**
